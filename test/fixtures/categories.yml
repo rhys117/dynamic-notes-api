@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Offline
+  description: Service is offline
+  tags: [MyString, MyString2]
+
+two:
+  name: Dropouts
+  description: Service is dropping out
+  tags: [MyString, MyString2]
