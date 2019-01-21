@@ -14,6 +14,16 @@ class Notes::QuestionTest < ActiveSupport::TestCase
     assert @text_question.valid?
   end
 
+  test 'must have name' do
+    @select_question.name = ' '
+    assert_not @select_question.valid?
+  end
+
+  test 'must have input' do
+    @select_question.input = ' '
+    assert_not @select_question.valid?
+  end
+
   test 'selectable inputs require selections' do
     @select_question.selections = nil
     assert_not @select_question.valid?

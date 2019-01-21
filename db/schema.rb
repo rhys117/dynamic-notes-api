@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_21_024455) do
+ActiveRecord::Schema.define(version: 2019_01_21_044804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,22 @@ ActiveRecord::Schema.define(version: 2019_01_21_024455) do
     t.string "name"
     t.string "description"
     t.text "tags", default: [], array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "notes_line_orders", force: :cascade do |t|
+    t.bigint "notes_question_id"
+    t.bigint "notes_line_id"
+    t.integer "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["notes_line_id"], name: "index_notes_line_orders_on_notes_line_id"
+    t.index ["notes_question_id"], name: "index_notes_line_orders_on_notes_question_id"
+  end
+
+  create_table "notes_lines", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,4 +49,6 @@ ActiveRecord::Schema.define(version: 2019_01_21_024455) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "notes_line_orders", "notes_lines"
+  add_foreign_key "notes_line_orders", "notes_questions"
 end

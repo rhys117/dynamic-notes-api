@@ -1,4 +1,6 @@
 class Notes::Question < ApplicationRecord
+  validates :name, presence: true
+  validates :input, presence: true
   validates :selections, presence: true, if: :selectable?
   validates :selections, absence: true, unless: :selectable?
 
