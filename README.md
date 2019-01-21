@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is intended to be an API for a note generator with a react front end. 
 
-Things you may want to cover:
+This is a advancement of my previous rails note generator project.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Current Items Todo:  
+- Models: Notes::Lines, Notes::Template, Path
+- Add auth JWT
+- Routes
+- Controllers

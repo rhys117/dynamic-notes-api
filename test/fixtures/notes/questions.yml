@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+text_case:
+  name: phone number
+  description: What was the phone number?
+  input: text
+  placeholder: eg 0423xxxx91
+
+select_case:
+  name: confirmed id
+  description: Did you confirm ID for this entity?
+  input: select
+  selections: ['Confirmed ID', 'Confirmed ID as Technical Advocate', 'Confirmed ID as Authorised Representative',
+               'Could Not Confirm ID']
