@@ -1,3 +1,3 @@
 class Notes::Line < ApplicationRecord
-  has_many :notes_line_orders, class_name: 'Notes::LineOrder'
+  has_many :order, class_name: 'Notes::LineOrder', foreign_key: 'notes_line_id'
 end
