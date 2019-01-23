@@ -8,8 +8,16 @@ module Types
     end
 
     def question(id:)
-      # binding.pry
       Notes::Question.find(id)
+    end
+
+    field :line, LineType, null: true do
+      description "Returns a line"
+      argument :id, ID, required: true
+    end
+
+    def line(id:)
+      Notes::Line.find(id)
     end
   end
 end
