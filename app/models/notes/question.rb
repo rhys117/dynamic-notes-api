@@ -1,4 +1,6 @@
 class Notes::Question < ApplicationRecord
+  attr_accessor :order
+
   validates :name, presence: true
   validates :input, presence: true
   validates :selections, presence: true, if: :selectable?

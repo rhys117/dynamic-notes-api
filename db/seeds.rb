@@ -18,9 +18,9 @@ select_question = Notes::Question.create(name: 'confirmed id',
                                                       'Could Not Confirm ID',])
 
 line = Notes::Line.create
-first_line_order = Notes::LineOrder.create(notes_line_id: line.id, notes_question_id: text_question.id, order: 1)
-second_line_order = Notes::LineOrder.create(notes_line_id: line.id, notes_question_id: select_question.id, order: 2)
+first_line_order = Notes::LineQuestions.create(notes_line_id: line.id, notes_question_id: text_question.id, order: 1)
+second_line_order = Notes::LineQuestions.create(notes_line_id: line.id, notes_question_id: select_question.id, order: 2)
 
 second_line = Notes::Line.create
-first_line_order = Notes::LineOrder.create(notes_line_id: second_line.id, notes_question_id: text_question.id, order: 1)
-second_line_order = Notes::LineOrder.create(notes_line_id: second_line.id, notes_question_id: select_question.id, order: 2)
+first_line_order = Notes::LineQuestions.create(notes_line_id: second_line.id, notes_question_id: text_question.id, order: 1)
+second_line_order = Notes::LineQuestions.create(notes_line_id: second_line.id, notes_question_id: select_question.id, order: 2)
