@@ -1,10 +1,10 @@
 class Notes::Line < ApplicationRecord
-  has_many :line_questions, class_name: 'Notes::LineQuestions', foreign_key: 'note_questions_line_id'
-
   def questions
-    line_questions.map do |line_question|
-      binding.pry
-      line_question.question
+    question_ids = Notes::LineQuestions.select(:notes_question_id, :order).where(notes_line_id: id)
+    question_ids.map do |record|
+      question = Notes::Question.find(record.notes_question_id)
+      question.order = record.order
+      question
     end
   end
 end
