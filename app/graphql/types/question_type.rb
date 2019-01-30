@@ -4,4 +4,5 @@ class Types::QuestionType < Types::BaseObject
   field :input, String, null: false
   field :description, String, null: true
   field :selections, [String], null: true
+  field :order, Integer, null: true
 end
