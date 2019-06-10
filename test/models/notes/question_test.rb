@@ -33,4 +33,13 @@ class Notes::QuestionTest < ActiveSupport::TestCase
     @text_question.selections = %w(one two)
     assert_not @text_question.valid?
   end
+
+  test 'Responds to lines' do
+    assert_not @text_question.lines.nil?
+  end
+
+  test "Responds correctly to selectable?" do
+    assert_not @text_question.selectable?
+    assert @select_question.selectable?
+  end
 end
