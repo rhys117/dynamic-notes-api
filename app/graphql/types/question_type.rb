@@ -3,6 +3,6 @@ class Types::QuestionType < Types::BaseObject
   field :name, String, null: true
   field :input, String, null: false
   field :description, String, null: true
+  field :selectable, Boolean, null: false, method: :selectable?
   field :selections, [String], null: true
-  field :order, Integer, null: true
 end

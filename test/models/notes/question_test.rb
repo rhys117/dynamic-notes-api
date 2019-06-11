@@ -28,7 +28,7 @@ class Notes::QuestionTest < ActiveSupport::TestCase
     @select_question.selections = nil
     assert_not @select_question.valid?
   end
-
+  
   test 'non selectable inputs do not allow selections' do
     @text_question.selections = %w(one two)
     assert_not @text_question.valid?
@@ -38,7 +38,7 @@ class Notes::QuestionTest < ActiveSupport::TestCase
     assert_not @text_question.lines.nil?
   end
 
-  test "Responds correctly to selectable?" do
+  test 'Responds correctly to selectable?' do
     assert_not @text_question.selectable?
     assert @select_question.selectable?
   end

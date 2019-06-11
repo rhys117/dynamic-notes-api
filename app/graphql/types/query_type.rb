@@ -2,6 +2,23 @@ module Types
   class QueryType < Types::BaseObject
     description "The query root of this schema"
 
+    field :template, TemplateType, null: false do
+      description "Find a template by id"
+      argument :id, ID, required: true
+    end
+
+    def template(id:)
+      Notes::Template.find(id)
+    end
+
+    field :all_templates, [TemplateType], null: true do
+      description "Return all templates"
+    end
+
+    def all_templates
+      Notes::Template.all
+    end
+
     field :question, QuestionType, null: true do
       description "Find a question by ID"
       argument :id, ID, required: true
@@ -19,12 +36,5 @@ module Types
     def line(id:)
       Notes::Line.find(id)
     end
-
-    #
-    # # Need to define template model
-    # field :template, TemplateType, null: false do
-    #   description "Returns a template by ID"
-    #   argument :id, ID, required: true
-    # end
   end
 end
