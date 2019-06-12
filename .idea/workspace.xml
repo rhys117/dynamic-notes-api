@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60e0816b-99f8-453a-978e-3cec27d974aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/graphql/types/line_question_type.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/graphql/line_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/graphql/question_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/graphql/template_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dynamic-notes-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dynamic-notes-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/graphql/types/line_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/line_type.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/graphql/types/query_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/query_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/types/question_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/question_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/types/template_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/template_type.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/types/template_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/template_part_type.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/notes/line.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/notes/line.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/notes/template.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/notes/template_part.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/fixtures/notes/lines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/notes/lines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/notes/templates.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/notes/templates.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/notes/question_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/notes/question_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/notes/templates.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/notes/template_parts.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/graphql/line_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/graphql/line_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/graphql/template_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/graphql/template_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/notes/line_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/notes/line_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/notes/template_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/notes/template_part_test.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -29,59 +34,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="question_test.rb" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/test/integration/graphql/question_test.rb">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="390">
-                    <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="question.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/notes/question.rb">
+      <file leaf-file-name="line_test.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/notes/line_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question_type.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/graphql/types/question_type.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_type.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/graphql/types/query_type.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question_test.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/models/notes/question_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -89,22 +48,46 @@
       <file leaf-file-name="line_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/integration/graphql/line_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template_test.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="query_type.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/graphql/types/query_type.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="line_type.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/graphql/types/line_type.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template_test.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/integration/graphql/template_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="255">
+              <caret line="17" column="93" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>template</find>
+      <find>notes_template_part</find>
+    </findStrings>
   </component>
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
@@ -126,7 +109,6 @@
         <option value="$PROJECT_DIR$/test/fixtures/notes/line_orders.yml" />
         <option value="$PROJECT_DIR$/app/models/notes/line_order.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/graphql/types/notes/question_type.rb" />
         <option value="$PROJECT_DIR$/app/graphql/dynamic_notes_api_schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190123090337_add_question_ids_to_line.rb" />
@@ -134,29 +116,36 @@
         <option value="$PROJECT_DIR$/app/graphql/types/line_questions_type.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190610092807_create_note_template.rb" />
-        <option value="$PROJECT_DIR$/app/models/notes/template.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190610093338_create_notes_templates.rb" />
         <option value="$PROJECT_DIR$/app/models/notes/line_questions.rb" />
         <option value="$PROJECT_DIR$/app/models/notes/question.rb" />
-        <option value="$PROJECT_DIR$/test/models/notes/line_test.rb" />
         <option value="$PROJECT_DIR$/app/models/notes/line_question.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/notes/line_questions.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/notes/questions.yml" />
         <option value="$PROJECT_DIR$/test/models/notes/line_questions_test.rb" />
         <option value="$PROJECT_DIR$/test/models/notes/template_test.rb" />
-        <option value="$PROJECT_DIR$/app/graphql/types/query_type.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/notes/templates.yml" />
         <option value="$PROJECT_DIR$/test/integration/graphql/graphql_template_test.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/notes/lines.yml" />
         <option value="$PROJECT_DIR$/app/graphql/types/template_type.rb" />
-        <option value="$PROJECT_DIR$/app/graphql/types/line_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/notes/line.rb" />
         <option value="$PROJECT_DIR$/app/graphql/types/line_question_type.rb" />
-        <option value="$PROJECT_DIR$/test/integration/graphql/line_test.rb" />
-        <option value="$PROJECT_DIR$/test/integration/graphql/template_test.rb" />
         <option value="$PROJECT_DIR$/app/graphql/types/question_type.rb" />
         <option value="$PROJECT_DIR$/test/integration/graphql/question_test.rb" />
         <option value="$PROJECT_DIR$/test/models/notes/question_test.rb" />
+        <option value="$PROJECT_DIR$/.ruby-version" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/notes/template.rb" />
+        <option value="$PROJECT_DIR$/test/fixtures/notes/lines.yml" />
+        <option value="$PROJECT_DIR$/db/migrate/20190612083312_rename_template_to_template_part.rb" />
+        <option value="$PROJECT_DIR$/app/models/notes/line.rb" />
+        <option value="$PROJECT_DIR$/test/fixtures/notes/template_parts.yml" />
+        <option value="$PROJECT_DIR$/app/models/notes/template_part.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/test/models/notes/line_test.rb" />
+        <option value="$PROJECT_DIR$/test/models/notes/template_part_test.rb" />
+        <option value="$PROJECT_DIR$/app/graphql/types/line_type.rb" />
+        <option value="$PROJECT_DIR$/test/integration/graphql/line_test.rb" />
+        <option value="$PROJECT_DIR$/app/graphql/types/query_type.rb" />
+        <option value="$PROJECT_DIR$/test/integration/graphql/template_test.rb" />
       </list>
     </option>
   </component>
@@ -172,15 +161,15 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="1417" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,26 +198,7 @@
             <path>
               <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
@@ -242,19 +212,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="integration" type="462c0819:PsiDirectoryNode" />
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dynamic-notes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynamic-notes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,14 +367,15 @@
       <workItem from="1549494256860" duration="4117000" />
       <workItem from="1549595029770" duration="6000" />
       <workItem from="1560155839445" duration="23563000" />
+      <workItem from="1560327593445" duration="3663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70308000" />
+    <option name="totallyTimeSpent" value="74655000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -426,7 +384,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32820514" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49963155" weight="0.32948717" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28513733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28917608" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
@@ -445,18 +403,18 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32820514" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26013264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49963155" weight="0.32948717" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5003685" side_tool="true" weight="0.32948717" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -471,44 +429,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/categories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/category_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="105" selection-start-line="4" selection-start-column="105" selection-end-line="4" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190121044038_create_notes_lines.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190121024455_create_notes_questions.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,13 +446,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190121044733_create_notes_lines.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.1/gems/graphql-1.8.13/lib/graphql/schema/member/base_dsl_methods.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -556,13 +469,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/graphql/types/line_questions_type.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190610085108_rename_line_question_to_line_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190610085108_rename_line_question_to_line_questions.rb" />
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -573,13 +480,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20190123090337_add_question_ids_to_line.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190610092807_create_note_template.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190610092807_create_note_template.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190128115621_rename_line_order_to_line_question_join.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -587,87 +488,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/categories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190610105544_rename_line_questions_to_line_question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190610105544_rename_line_questions_to_line_question.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190610093338_create_notes_templates.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/questions.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/notes/line_questions_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/notes/line_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/notes/template_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notes/template.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notes/line_question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="66" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -685,27 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/line_questions.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/templates.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/lines.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/graphql/types/line_question_type.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -713,45 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/graphql/types/line_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/graphql/types/template_type.rb">
+    <entry file="file://$PROJECT_DIR$/app/graphql/types/template_part_type.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notes/line.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/graphql/template_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration/graphql/line_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notes/question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -769,10 +538,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/graphql/types/query_type.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190612075906_rename_template_to_template_part.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="-274">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rubocop.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/notes/line_questions_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -780,6 +589,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/categories.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190612083312_rename_template_to_template_part.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notes/template_part.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notes/line.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/template_parts.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/questions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/lines.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/notes/line_questions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notes/question.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notes/line_question.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="66" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/notes/template_part_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/notes/line_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/graphql/types/line_type.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/graphql/line_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/graphql/types/query_type.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/graphql/template_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="93" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
         </state>
       </provider>
     </entry>

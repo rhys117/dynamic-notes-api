@@ -2,21 +2,21 @@ module Types
   class QueryType < Types::BaseObject
     description "The query root of this schema"
 
-    field :template, TemplateType, null: false do
+    field :template_part, TemplatePartType, null: false do
       description "Find a template by id"
       argument :id, ID, required: true
     end
 
-    def template(id:)
-      Notes::Template.find(id)
+    def template_part(id:)
+      Notes::TemplatePart.find(id)
     end
 
-    field :all_templates, [TemplateType], null: true do
+    field :all_template_parts, [TemplatePartType], null: true do
       description "Return all templates"
     end
 
-    def all_templates
-      Notes::Template.all
+    def all_template_parts
+      Notes::TemplatePart.all
     end
 
     field :question, QuestionType, null: true do

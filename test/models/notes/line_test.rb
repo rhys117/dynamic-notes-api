@@ -5,8 +5,8 @@ class Notes::LineTest < ActiveSupport::TestCase
     @line = notes_lines.first
   end
 
-  test "Template id is present" do
-    @line.template = nil
+  test "Template part id is present" do
+    @line.template_part = nil
     assert_not @line.valid?
   end
 

@@ -7,7 +7,7 @@ class GraphQLLineTest < ActiveSupport::TestCase
         line(id: $id) {
           id,
           description,
-          template {
+          templatePart {
            id
           },
           questionsAndOrder {
@@ -31,7 +31,7 @@ class GraphQLLineTest < ActiveSupport::TestCase
     assert result_line_data['id'] == line.id.to_s
     assert result_line_data['questionsAndOrder'].map { |qao| qao['id'] }.map(&:to_s) == result_line_data['questionsAndOrder'].map { |qao| qao['id'] }
     assert result_line_data['questionsAndOrder'].map { |qao| qao['question'] }.count == line.questions.count
-    assert result_line_data['template']['id'] == line.template.id.to_s
+    assert result_line_data['templatePart']['id'] == line.template_part.id.to_s
     assert result_line_data['order'] == line.order
   end
 end

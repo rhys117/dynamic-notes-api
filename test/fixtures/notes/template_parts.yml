@@ -2,8 +2,8 @@
 
 one:
   id: 1
-  name: First Template Fixture
+  name: First Template Part Fixture
 
 two:
   id: 2
-  name: Second Template Fixture
+  name: Second Template Part Fixture
