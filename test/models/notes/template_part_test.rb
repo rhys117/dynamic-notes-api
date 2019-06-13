@@ -15,7 +15,7 @@ class Notes::TemplatePartTest < ActiveSupport::TestCase
     assert_not @template_part.valid?
   end
 
-  test "Name should be valid between 5 and 100" do
+  test "Name should be valid between 5 and 30" do
     @template_part.name = 'Valid Name'
     assert @template_part.valid?
   end
