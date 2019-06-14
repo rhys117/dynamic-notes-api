@@ -8,7 +8,7 @@ module Types
     end
 
     def template_part(id:)
-      Notes::TemplatePart.find(id)
+      Notes::Part.find(id)
     end
 
     field :all_template_parts, [TemplatePartType], null: true do
@@ -16,7 +16,7 @@ module Types
     end
 
     def all_template_parts
-      Notes::TemplatePart.all
+      Notes::Part.all
     end
 
     field :question, QuestionType, null: true do

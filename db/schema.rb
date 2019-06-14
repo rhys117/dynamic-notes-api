@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_13_115044) do
+ActiveRecord::Schema.define(version: 2019_06_14_103923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,9 +37,15 @@ ActiveRecord::Schema.define(version: 2019_06_13_115044) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "notes_template_part_id"
+    t.integer "notes_part_id"
     t.integer "order"
-    t.index ["notes_template_part_id"], name: "index_notes_lines_on_notes_template_part_id"
+    t.index ["notes_part_id"], name: "index_notes_lines_on_notes_part_id"
+  end
+
+  create_table "notes_parts", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "notes_questions", force: :cascade do |t|
@@ -53,9 +59,13 @@ ActiveRecord::Schema.define(version: 2019_06_13_115044) do
   end
 
   create_table "notes_template_parts", force: :cascade do |t|
-    t.string "name"
+    t.bigint "notes_template_id"
+    t.bigint "notes_part_id"
+    t.integer "order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["notes_part_id"], name: "index_notes_template_parts_on_notes_part_id"
+    t.index ["notes_template_id"], name: "index_notes_template_parts_on_notes_template_id"
   end
 
   create_table "notes_templates", force: :cascade do |t|
@@ -67,4 +77,6 @@ ActiveRecord::Schema.define(version: 2019_06_13_115044) do
 
   add_foreign_key "notes_line_questions", "notes_lines"
   add_foreign_key "notes_line_questions", "notes_questions"
+  add_foreign_key "notes_template_parts", "notes_parts"
+  add_foreign_key "notes_template_parts", "notes_templates"
 end

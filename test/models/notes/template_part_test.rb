@@ -5,26 +5,27 @@ class Notes::TemplatePartTest < ActiveSupport::TestCase
     @template_part = notes_template_parts.first
   end
 
-  test "Name should be present" do
-    @template_part.name = '         '
+  test "must have template id" do
+    @template_part.template = nil
     assert_not @template_part.valid?
+    assert @template_part.errors[:template].include?('must exist')
   end
 
-  test "Name should have a minimum length of 5" do
-    @template_part.name = 'Nope'
+  test "must have part id" do
+    @template_part.part = nil
     assert_not @template_part.valid?
+    assert @template_part.errors[:part].include?('must exist')
   end
 
-  test "Name should be valid between 5 and 30" do
-    @template_part.name = 'Valid Name'
-    assert @template_part.valid?
+  test "order must be present" do
+    @template_part.order = nil
+    assert_not @template_part.valid?
+    assert @template_part.errors[:order].include?("can't be blank")
   end
 
-  test "Responds to lines" do
-    assert_not @template_part.lines.nil?
-  end
-
-  test "Responds to questions" do
-    assert_not @template_part.questions.nil?
+  test "order must be unique for each template" do
+    @template_part.order = 2
+    assert_not @template_part.valid?
+    @template_part.errors[:order].include?('has already been taken')
   end
 end

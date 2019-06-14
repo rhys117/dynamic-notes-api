@@ -1,6 +1,6 @@
 class Notes::TemplatePart < ApplicationRecord
-  has_many :lines, foreign_key: 'notes_template_part_id'
-  has_many :questions, through: :lines
+  belongs_to :template, class_name: "Notes::Template", foreign_key: 'notes_template_id'
+  belongs_to :part, class_name: "Notes::Part", foreign_key: 'notes_part_id'
 
-  validates :name, presence: true, uniqueness: true, length: { minimum: 5, maximum: 30 }
+  validates :order, presence: true, uniqueness: { scope: :template }
 end

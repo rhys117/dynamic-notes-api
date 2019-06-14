@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GraphQLTemplateTest < ActiveSupport::TestCase
+class GraphQLPartTest < ActiveSupport::TestCase
   test 'loads template part by ID' do
     query_string = <<-GRAPHQL
       query($id: ID!) {
@@ -14,7 +14,7 @@ class GraphQLTemplateTest < ActiveSupport::TestCase
       }
     GRAPHQL
 
-    template_part = notes_template_parts.first
+    template_part = notes_parts.first
     result = DynamicNotesApiSchema.execute(query_string, variables: { id: template_part.id })
     assert result['errors'].nil?
 
@@ -37,6 +37,6 @@ class GraphQLTemplateTest < ActiveSupport::TestCase
     assert result['errors'].nil?
 
     result_template_parts_data = result['data']['allTemplateParts']
-    assert result_template_parts_data.count == notes_template_parts.count
+    assert result_template_parts_data.count == notes_parts.count
   end
 end
