@@ -20,7 +20,7 @@ class Notes::LineTest < ActiveSupport::TestCase
   end
 
   test "Order is unique" do
-    @other_line = notes_lines[1]
+    @other_line = notes_lines.last
     @other_line.order = @line.order
     assert_not @other_line.valid?
   end

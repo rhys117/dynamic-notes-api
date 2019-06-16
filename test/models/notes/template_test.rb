@@ -22,19 +22,18 @@ class Notes::TemplateTest < ActiveSupport::TestCase
 
   test "Has template parts and alias" do
     assert @template.template_parts.first.is_a?(Notes::TemplatePart)
-    assert @template.template_parts.ids == [1, 2]
-    assert @template.template_parts.pluck(:order) == [1, 2]
-    assert @template.parts_and_order.ids == [1, 2]
-    assert @template.parts_and_order.pluck(:order) == [1, 2]
+    assert @template.template_parts.ids == notes_template_parts.select { |tem_part| tem_part.template == @template }.map(&:id)
+    assert @template.template_parts.pluck(:order) == notes_template_parts.select { |tem_part| tem_part.template == @template }.map(&:order)
+    assert @template.parts_and_order == @template.template_parts
   end
 
   test "Has parts" do
     assert @template.parts.first.is_a?(Notes::Part)
-    assert @template.parts.ids == [1, 2]
+    assert @template.parts == notes_template_parts.select { |tem_part| tem_part.template == @template }.map(&:part)
   end
 
   test "Has quetions" do
     assert @template.questions.first.is_a?(Notes::Question)
-    assert @template.questions.ids == [2, 1]
+    assert @template.questions == notes_questions.select { |quest| quest.templates.include?(@template) }
   end
 end

@@ -34,12 +34,24 @@ class Notes::QuestionTest < ActiveSupport::TestCase
     assert_not @text_question.valid?
   end
 
-  test 'Responds to lines' do
-    assert_not @text_question.lines.nil?
-  end
-
   test 'Responds correctly to selectable?' do
     assert_not @text_question.selectable?
     assert @select_question.selectable?
+  end
+
+  test 'has many lines' do
+    assert @text_question.lines == notes_line_questions.select { |line_quest| line_quest.question == @text_question }.map(&:line)
+  end
+
+  test 'has many parts' do
+    assert @text_question.parts == notes_parts.select { |part| part.questions.include?(@text_question) }
+  end
+
+  test 'has many template parts' do
+    assert @text_question.templates_and_order == notes_template_parts.select { |temp_part| temp_part.part.questions.include?(@text_question) }
+  end
+
+  test 'has many templates' do
+    assert @text_question.templates == notes_templates.select { |template| template.questions.include?(@text_question) }
   end
 end

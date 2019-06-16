@@ -20,11 +20,19 @@ class Notes::PartTest < ActiveSupport::TestCase
     assert @part.valid?
   end
 
-  test "Responds to lines" do
-    assert_not @part.lines.nil?
+  test "has many lines" do
+    assert @part.lines == notes_lines.select { |line| line.part == @part }
   end
 
-  test "Responds to questions" do
-    assert_not @part.questions.nil?
+  test "has many questions" do
+    assert @part.questions == notes_questions.select { |quest| quest.parts.include?(@part) }
+  end
+
+  test "has many templates and order (template parts alias)" do
+    assert @part.templates_and_order == notes_template_parts.select { |temp_part| temp_part.part == @part }
+  end
+
+  test "has many templates" do
+    assert @part.templates == notes_templates.select { |template| template.parts.include?(@part) }
   end
 end
