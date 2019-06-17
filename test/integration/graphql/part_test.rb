@@ -17,11 +17,6 @@ class GraphQLPartTest < ActiveSupport::TestCase
     template_part = notes_parts.first
     result = DynamicNotesApiSchema.execute(query_string, variables: { id: template_part.id })
     assert result['errors'].nil?
-
-    result_template_part_data = result['data']['templatePart']
-    assert result_template_part_data['id'] == template_part.id.to_s
-    assert result_template_part_data['name'] == template_part.name
-    assert result_template_part_data['lines'].count == template_part.lines.count
   end
 
   test 'loads all template parts' do
@@ -35,8 +30,5 @@ class GraphQLPartTest < ActiveSupport::TestCase
 
     result = DynamicNotesApiSchema.execute(query_string)
     assert result['errors'].nil?
-
-    result_template_parts_data = result['data']['allTemplateParts']
-    assert result_template_parts_data.count == notes_parts.count
   end
 end

@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
-  notes_question_id: 1
+  notes_part_id: 1
   notes_line_id: 1
   order: 1
 
 two:
-  id: 2
-  notes_question_id: 2
-  notes_line_id: 1
+  notes_part_id: 1
+  notes_line_id: 2
   order: 2

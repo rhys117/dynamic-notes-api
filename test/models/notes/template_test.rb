@@ -36,4 +36,9 @@ class Notes::TemplateTest < ActiveSupport::TestCase
     assert @template.questions.first.is_a?(Notes::Question)
     assert @template.questions == notes_questions.select { |quest| quest.templates.include?(@template) }
   end
+
+  test "Has triggers" do
+    assert @template.triggers.first.is_a?(Notes::Trigger)
+    assert @template.triggers == notes_triggers.select { |trig| trig.template == @template }
+  end
 end

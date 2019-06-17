@@ -9,15 +9,18 @@ one:
   notes_template_id: 1
   notes_part_id: 1
   order: 1
+  static: false
 
 two:
   id: 2
   notes_template_id: 1
   notes_part_id: 2
   order: 2
+  static: false
 
 three:
   id: 3
   notes_template_id: 2
   notes_part_id: 1
   order: 1
+  static: true

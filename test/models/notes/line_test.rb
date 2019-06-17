@@ -5,23 +5,11 @@ class Notes::LineTest < ActiveSupport::TestCase
     @line = notes_lines.first
   end
 
-  test "Template part id is present" do
-    @line.part = nil
-    assert_not @line.valid?
+  test "Has many part lines" do
+    assert @line.part_lines == notes_part_lines.select { |part_line| part_line.line == @line }
   end
 
   test "Responds to questions" do
     assert_not @line.questions.nil?
-  end
-
-  test "Order is present" do
-    @line.order = nil
-    assert_not @line.valid?
-  end
-
-  test "Order is unique" do
-    @other_line = notes_lines.last
-    @other_line.order = @line.order
-    assert_not @other_line.valid?
   end
 end

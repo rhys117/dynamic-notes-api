@@ -21,7 +21,7 @@ class Notes::PartTest < ActiveSupport::TestCase
   end
 
   test "has many lines" do
-    assert @part.lines == notes_lines.select { |line| line.part == @part }
+    assert @part.lines == notes_lines.select { |line| line.parts.include?(@part) }
   end
 
   test "has many questions" do

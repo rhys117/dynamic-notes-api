@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Notes::LineQuestionsTest < ActiveSupport::TestCase
+class Notes::LineQuestionTest < ActiveSupport::TestCase
   def setup
     @line_question = notes_line_questions.first
   end

@@ -17,6 +17,15 @@ class Notes::TemplatePartTest < ActiveSupport::TestCase
     assert @template_part.errors[:part].include?('must exist')
   end
 
+  test "static must be present" do
+    @template_part.static = nil
+    assert_not @template_part.valid?
+  end
+
+  test "static field is set to false by default" do
+    assert_not Notes::TemplatePart.new.static
+  end
+
   test "order must be present" do
     @template_part.order = nil
     assert_not @template_part.valid?

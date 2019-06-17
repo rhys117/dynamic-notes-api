@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Phone number trigger
+  notes_template_part_id: 1
+  notes_line_question_id: 1
+  triggered_notes_template_part_id: 2
+  value: Yes
+
+two:
+  name: Confirmed ID trigger
+  notes_template_part_id: 2
+  notes_line_question_id: 2
+  triggered_notes_template_part_id: 3
+  value: No
