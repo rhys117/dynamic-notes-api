@@ -8,6 +8,7 @@ one:
   id: 1
   name: Test Template One
   description: First test fixture template
+
 two:
   id: 2
   name: Test Template Two

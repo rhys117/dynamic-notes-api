@@ -6,6 +6,7 @@ one:
   notes_line_question_id: 1
   triggered_notes_template_part_id: 2
   value: Yes
+  notes_trigger_type_id: 1
 
 two:
   name: Confirmed ID trigger
@@ -13,3 +14,4 @@ two:
   notes_line_question_id: 2
   triggered_notes_template_part_id: 3
   value: No
+  notes_trigger_type_id: 2

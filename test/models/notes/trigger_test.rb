@@ -9,6 +9,16 @@ class Notes::TriggerTest < ActiveSupport::TestCase
     assert @trigger.valid?
   end
 
+  test "belongs to a trigger type" do
+    @trigger.trigger_type = nil
+    assert_not @trigger.valid?
+    assert @trigger.errors[:trigger_type].include?('must exist')
+  end
+
+  test "responds to type as trigger type alias" do
+    assert @trigger.trigger_type == @trigger.type
+  end
+
   test "belongs to a template part" do
     @trigger.template_part = nil
     assert_not @trigger.valid?
@@ -39,9 +49,11 @@ class Notes::TriggerTest < ActiveSupport::TestCase
     assert @trigger.errors[:name].include?("can't be blank")
   end
 
-  test "must have a value" do
+  test "must have a value if trigger type is value_change" do
     @trigger.value = '     '
     assert_not @trigger.valid?
     assert @trigger.errors[:value].include?("can't be blank")
+    @trigger.type = notes_trigger_types.last
+    assert @trigger.valid?
   end
 end
