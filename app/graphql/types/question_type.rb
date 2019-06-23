@@ -5,4 +5,5 @@ class Types::QuestionType < Types::BaseObject
   field :description, String, null: true
   field :selectable, Boolean, null: false, method: :selectable?
   field :selections, [String], null: true
+  field :placeholder, String, null: true
 end

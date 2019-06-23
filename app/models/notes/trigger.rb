@@ -13,4 +13,8 @@ class Notes::Trigger < ApplicationRecord
   def value_change_type?
     type&.name == 'value_change'
   end
+
+  def type_name
+    type.name
+  end
 end
